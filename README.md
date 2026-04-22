@@ -1,7 +1,13 @@
 # HR Workflow Designer
 
-A visual workflow designer for HR processes built with **React**, **TypeScript**, **Vite**, and **React Flow**.
-This application allows users to create, configure, and simulate workflows such as onboarding, approvals, and automation pipelines.
+**Aarzu Sharma**
+Full Stack Engineering Internship Assignment
+
+# Project Overview
+
+This project is a visual workflow designer built using **React, TypeScript, Vite, and React Flow**.
+
+It allows users to create, configure, and simulate workflows such as onboarding, approvals, and automation pipelines using a drag-and-drop interface.
 
 # Features
 
@@ -26,22 +32,52 @@ This application allows users to create, configure, and simulate workflows such 
 
 # Example Workflow
 
-Example flow:
+**Start → Task → Approval → End**
 
-Start → Task → Approval → End
+# Steps to Test:
 
-# Steps to test:
-
-1. Drag a **Start Node**
-2. Add a **Task Node** (assign to HR)
-3. Add an **Approval Node** (Manager approval)
-4. Add an **End Node**
+1. Drag a Start Node
+2. Add a Task Node
+3. Add an Approval Node
+4. Add an End Node
 5. Connect nodes sequentially
-6. Click **Run Workflow**
+6. Click Run Workflow
 
-### Expected Output:
+# Expected Output:
 
 Start → Task → Approval → End
+
+
+# Architecture
+
+The application follows a modular component-based architecture:
+
+* **Canvas** – Handles React Flow rendering and interactions
+* **Sidebar** – Provides draggable node types
+* **NodeForm** – Manages dynamic configuration of nodes
+* **SimulationPanel** – Handles workflow execution and validation
+* **useWorkflow Hook** – Manages state and business logic
+* **mockApi** – Simulates backend behavior
+
+# How to Run
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start development server:
+
+```bash
+npm run dev
+```
+
+3. Open in browser:
+
+```
+http://localhost:5173
+```
 
 # Tech Stack
 
@@ -49,77 +85,11 @@ Start → Task → Approval → End
 * TypeScript
 * Vite
 * React Flow
-
-# Prerequisites
-
-* Node.js (v18 or higher)
-* npm
-
-Check versions:
-
-```bash
-node --version
-npm --version
-```
-
-# Getting Started
-
-# 1. Install dependencies
-
-```bash
-npm install
-```
-
-# 2. Start development server
-
-```bash
-npm run dev
-```
-
-Open:
-
-```
-http://localhost:5173
-```
-
----
-
-# Project Structure
-
-```
-src/
-├── api/
-│   └── mockApi.ts
-├── components/
-│   ├── Canvas.tsx
-│   ├── Sidebar.tsx
-│   ├── NodeForm.tsx
-│   └── SimulationPanel.tsx
-├── hooks/
-│   └── useWorkflow.ts
-├── nodes/
-│   ├── StartNode.tsx
-│   ├── TaskNode.tsx
-│   ├── ApprovalNode.tsx
-│   ├── AutomationNode.tsx
-│   └── EndNode.tsx
-├── types/
-│   └── workflow.ts
-├── App.tsx
-└── main.tsx
-```
-# How to Use
-
-1. Drag nodes from sidebar onto canvas
-2. Connect nodes using edges
-3. Click a node to edit its properties
-4. Click **Run Workflow** to simulate execution
-5. Delete nodes using Delete/Backspace
-
-# Key Design Decisions
+* 
+# Design Decisions
 
 * Used **React Flow** for building node-based UI
-* Implemented **BFS traversal** for workflow execution
+* Implemented **BFS traversal** for correct workflow execution
 * Enforced **single Start node constraint**
 * Used **custom hook (useWorkflow)** for state management
 * Applied **TypeScript discriminated unions** for type safety
@@ -129,28 +99,44 @@ src/
 
 One major challenge was ensuring correct workflow execution order.
 
-Initially, nodes were processed in array order, which caused incorrect results.
+Initially, nodes were processed based on array order, which resulted in incorrect outputs.
 
-This was solved by implementing **graph traversal (BFS) based on edges**, ensuring execution follows actual workflow connections.
+This was resolved by implementing **graph traversal (BFS) using edges**, ensuring execution follows the actual workflow structure.
+
+# Completed
+
+* Drag and drop nodes
+* Node connections
+* Dynamic node configuration
+* Workflow validation
+* Simulation engine
+
+
 
 # Future Improvements
 
 * Improved UI and design system
-* Export/Import workflow as JSON
+* Export/Import workflows as JSON
 * Cycle detection
 * Undo/Redo functionality
 * Backend integration for persistence
-* Visual validation indicators on nodes
+* Visual validation indicators
 
- # Screenshots
-<img width="1907" height="1062" alt="image" src="https://github.com/user-attachments/assets/7e34d760-b5c6-4299-87fd-e44df5105dea" />
 
-<img width="1905" height="1054" alt="image" src="https://github.com/user-attachments/assets/2f698d0e-eae2-4741-ae1b-3fa782df3a2a" />
+# Screenshots
 
-<img width="1567" height="658" alt="image" src="https://github.com/user-attachments/assets/6d7eef35-3d36-420c-8794-8035806fdc6c" />
+<img width="1907" height="1062" alt="Screenshot 2026-04-22 155310" src="https://github.com/user-attachments/assets/7a0ae076-176d-4228-9ad3-5b864789e618" />
+<img width="1905" height="1054" alt="Screenshot 2026-04-22 155626" src="https://github.com/user-attachments/assets/5686f641-9427-49f5-b810-bd686daf85dd" />
+<img width="1567" height="658" alt="Screenshot 2026-04-22 155714" src="https://github.com/user-attachments/assets/63b34f15-66a9-4c44-91be-076994ce0c13" />
+<img width="1915" height="1058" alt="Screenshot 2026-04-22 155740" src="https://github.com/user-attachments/assets/fa73addc-2466-403f-b889-fc906881e23e" />
 
-<img width="1915" height="1058" alt="image" src="https://github.com/user-attachments/assets/3532b039-ba98-45a0-9717-9a2a4cb2295d" />
 
-# Author
+## 🔗 GitHub Repository
 
-Built by *Aarzu* as part of the Tredence Full Stack Engineering Internship Assignment.
+https://github.com/aarzusharma07/hr-workflow-designer
+
+---
+
+## 👨‍💻 Author
+
+Built by **Aarzu Sharma** as part of the Tredence Full Stack Engineering Internship Assignment.
