@@ -144,8 +144,11 @@ This was solved by implementing **graph traversal (BFS) based on edges**, ensuri
 
  # Screenshots
 <img width="1907" height="1062" alt="image" src="https://github.com/user-attachments/assets/7e34d760-b5c6-4299-87fd-e44df5105dea" />
+
 <img width="1905" height="1054" alt="image" src="https://github.com/user-attachments/assets/2f698d0e-eae2-4741-ae1b-3fa782df3a2a" />
+
 <img width="1567" height="658" alt="image" src="https://github.com/user-attachments/assets/6d7eef35-3d36-420c-8794-8035806fdc6c" />
+
 <img width="1915" height="1058" alt="image" src="https://github.com/user-attachments/assets/3532b039-ba98-45a0-9717-9a2a4cb2295d" />
 
 # Author
