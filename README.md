@@ -140,7 +140,7 @@ This was solved by implementing **graph traversal (BFS) based on edges**, ensuri
 * Cycle detection
 * Undo/Redo functionality
 * Backend integration for persistence
-* Visual validation indicators on nodes\
+* Visual validation indicators on nodes
 
 
 # Author
